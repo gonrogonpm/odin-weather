@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNow!</title>
+</head>
+<body>
+    <div class="layout">
+        <header>
+            <h1>
+                <img src="./images/logo.svg" width="200"  alt="weather now logo">
+            </h1>
+        </header>
+        <main>
+            <div class="wrapper">
+                <div class="weather-search">
+                    <form id="weather-search-form">
+                        <button type="submit">
+                            <img src="./images/search.svg" width="30" height="30" alt="search button">
+                        </button>
+                        <label for="city">city name</label>
+                        <input type="text" id="city" name="city" placeholder="Enter a city or town…" autocomplete="off" required>
+                    </form>
+                </div>
+                <div class="spinner">
+                    <div class="lds-roller">
+                        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                    </div>
+                </div>
+                <div class="noresult hidden">
+                    <p>
+                        Hmm, we couldn’t find <span class="input">search term</span>. Double-check the name or try a nearby spot!"
+                    </p>
+                    <p class="help">
+                        <em>Need help?</em> Try examples: “London”, “Tokyo”, “Seville”
+                    </p>
+                </div>
+                <div class="weather hidden">
+                    <div class="weather-current">
+                        <div class="main-data">
+                            <div class="location">
+                                <h2 class="where">Jerez, Cádiz, Spain</h2>
+                                <span class="date">Tuesday</span>
+                            </div>
+                            <div class="temp">
+                                <img class="icon" src="./images/weather/not-available.svg" width="60" height="60">
+                                <span class="value">49</span>
+                                <span class="units">
+                                    <span class="degree">°C</span>
+                                    <span class="fahrenheit inactive">°F</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="extra-data">
+                            <p class="icon-water"><span class="title">Humidity</span><span class="value humidity">41%</span></p>
+                            <p class="icon-rain"><span class="title">Precipitation</span><span class="value precip">7%</span></p>
+                            <p class="icon-wind"><span class="title">Wind</span><span class="value wind">23 km/h</span></p>
+                        </div>
+                    </div>
+                    <div class="weather-forecast">
+                        <div class="card">
+                            <div class="date">
+                                <span>Fri</span>
+                                <span>27</span>
+                            </div>
+                            <img class="icon" src="./images/weather/not-available.svg" width="30" height="30">
+                            <div class="temp">
+                                <span class="max">19°C</span>
+                                <span class="min">8°C</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="date">
+                                <span>Sat</span>
+                                <span>28</span>
+                            </div>
+                            <img class="icon" src="./images/weather/not-available.svg" width="30" height="30">
+                            <div class="temp">
+                                <span class="max">19°C</span>
+                                <span class="min">8°C</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="date">
+                                <span>Sun</span>
+                                <span>29</span>
+                            </div>
+                            <img class="icon" src="./images/weather/not-available.svg" width="30" height="30">
+                            <div class="temp">
+                                <span class="max">19°C</span>
+                                <span class="min">8°C</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="date">
+                                <span>Mon</span>
+                                <span>31/12</span>
+                            </div>
+                            <img class="icon" src="./images/weather/not-available.svg" width="30" height="30">
+                            <div class="temp">
+                                <span class="max">19°C</span>
+                                <span class="min">8°C</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="date">
+                                <span>Tue</span>
+                                <span>1</span>
+                            </div>
+                            <img class="icon" src="./images/weather/not-available.svg" width="30" height="30">
+                            <div class="temp">
+                                <span class="max">19°C</span>
+                                <span class="min">8°C</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            Photo by <a href="https://unsplash.com/es/@wolfgang_hasselmann?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Wolfgang Hasselmann</a> on <a href="https://unsplash.com/es/fotos/cielo-azul-y-nubes-blancas-sobre-el-lago-bR_-gllg7Bs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </footer>
+    </div>
+</body>
+</html>
